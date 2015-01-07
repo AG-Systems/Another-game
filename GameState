@@ -1,0 +1,16 @@
+var winScore : int = 2;
+var score : int = 0;
+var hasWon: boolean = false;
+function Start () {
+
+	Debug.Log("You need " + winScore + "to win the game");
+	Debug.Log("You have " + score + "points");
+}
+
+function Update () {
+
+	if(score >= winScore){
+		hasWon = true;
+		//Debug.Log("You won!!");
+	}
+}
